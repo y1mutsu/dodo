@@ -4,7 +4,7 @@ class SchedulesController < ApplicationController
   end
 
   def  new
-
+    @schedule = Schedules.new
   end
 
 end

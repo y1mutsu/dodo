@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get 'schedules/index'
-  get 'schedules' => 'schedules#index'
-  get 'scadules/new'  =>  'schedules#new'
+  devise_for :users
+   resources :schedules
+   resources :works
+
+  # get 'schedules' => 'schedules#index'
+  # get 'works/new' => 'works#new'
+  # post "works" => "works#create"
+  # get 'scadules/new'  =>  'schedules#new'
 end
