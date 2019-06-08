@@ -1,0 +1,11 @@
+<%= form_with model: @work, local: true do |form| %>
+<%= form.text_field :to_do %>
+<%= form.datetime_field :datetime  %>
+<%= form.text_field :text %>
+
+
+
+<%= render 'form', work: @work %>
+
+<%= link_to 'Back', works_path %>
+<% end %>
