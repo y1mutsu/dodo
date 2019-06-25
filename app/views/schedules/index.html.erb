@@ -1,4 +1,8 @@
-<div class = "container">
+<div class = "container_original">
+  <div class = "header">
+    <%= button_to "NEW", {controller: 'schedules', action: 'new'}, {method: :get, class: 'btn btb_new'} %>
+    <%= button_to "sign_out", {controller: 'devise/sessions', action: 'destroy'}, {method: :delete, class: 'btn btn_sign_out'} %>
+  </div>
   <div class = "title_wrap">
     <section class = "toc">
       <p>WORK</p>
