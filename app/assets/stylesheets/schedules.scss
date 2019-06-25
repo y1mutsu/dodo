@@ -1,5 +1,20 @@
-.container{
+.container_original{
+  width:100%;
+}
+.header{
   width:100vw;
+  height:20%;
+  display: inline-block;
+  margin: 0 0;
+  color: black;
+  background:#000099;
+  display:flex;
+  .btn{
+    width: 7em;
+    background-color:#FFFFFF;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+  }
 }
 .title_wrap{
   display:flex;
@@ -8,8 +23,6 @@
     width:calc(100%/3);
     text-align: center;
     padding: 2.0em;
-    // margin-left: 1em;
-    margin: 1em auto ;
     color: #FFFFFF;
     background-color: #5D99FF;
     border-left: solid 20px #FFFF55;
